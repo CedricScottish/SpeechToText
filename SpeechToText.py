@@ -41,9 +41,8 @@ def transcribe_audio(path):
         with sr.AudioFile(chunkFilename) as source:
             audio_listened = r.record(source)        
             
-            try:                
-                text = r.recognize_google_cloud(audio_listened, language="tr-TR")    
-                #  text = r.recognize_google(audio_listened, language="tr-TR")              
+            try:               
+                text = r.recognize_google(audio_listened, language="tr-TR")            
             except Exception as ex:
                 print("Error:", str(ex))
                 text= f"Error: {str(i)}. Audio File Transcribe Fault"
