@@ -6,6 +6,9 @@ ffmpeg'in son versiyonunun indirilmesi ve yolunun sistem ortam değişkenlerine 
 Ayrıca ; 
 
 pip install pydub
+
 pip install moviepy
+
 pip install SpeechRecognition
+
 pip install ffmpeg
