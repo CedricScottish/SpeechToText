@@ -32,9 +32,7 @@ def transcribe_audio(path):
         chunkFilename = os.path.join(folderName, f"Audio{i}.wav")
         audioChunk.export(chunkFilename, format="wav")
         
-        
-    wholeText = ""
-    
+    wholeText = ""    
     for i, audioChunk in enumerate(chunks, start=1):
         chunkFilename = os.path.join(folderName, f"Audio{i}.wav")
         
